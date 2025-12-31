@@ -1,3 +1,10 @@
+// nollställning av margin/padding för hela sidan
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+// dina andra SCSS-filer
 @use './header';
-@use './footer';
 @use './main';
+@use './footer';

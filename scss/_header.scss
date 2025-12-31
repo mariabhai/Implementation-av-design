@@ -1,6 +1,50 @@
 header {
-  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20; // högre än overlay
+  background-color: #2B6EDA;
+
   h1 {
+    font-family: 'Bagel Fat One', sans-serif;
+    font-size: 4rem;
     color: white;
+  }
+
+  .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .overlay-menu {
+    display: none; // startar gömd
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFB205;
+    z-index: 10; // lägre än header
+    font-family: 'Bagel Fat One', sans-serif;
+    color: #422B2B;
+    font-size: 3rem;
+
+    ul {
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 1.5em 0;
+    }
+  }
+
+  // Visa overlay när man hovrar på knappen
+  .menu-button:hover + .overlay-menu,
+  .overlay-menu:hover {
+    display: block;
   }
 }

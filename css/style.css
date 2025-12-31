@@ -1,8 +1,43 @@
 header {
-  background-color: red;
+  position: relative;
+  z-index: 20;
+  background-color: #2B6EDA;
 }
 header h1 {
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 4rem;
   color: white;
+}
+header .menu-container {
+  position: relative;
+  display: inline-block;
+}
+header .menu-container .overlay-menu {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px);
+  background-color: #FFB205;
+  z-index: 10;
+  padding-top: 0;
+  font-family: "Bagel Fat One", sans-serif;
+  color: #422B2B;
+  font-size: 3rem;
+}
+header .menu-container ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header .menu-container li {
+  padding: 1.5em 0;
+}
+header .menu-button:hover + .overlay-menu,
+header .overlay-menu:hover {
+  display: block;
 }
 
 main h2 {
