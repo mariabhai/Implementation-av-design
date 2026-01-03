@@ -1,18 +1,46 @@
 header {
-  position: relative;
-  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 100;
   background-color: #2B6EDA;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 1em;
+}
+header .header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
 }
 header h1 {
   font-family: "Bagel Fat One", sans-serif;
   font-size: 4rem;
+  font-weight: 400;
   color: white;
+  margin: 0;
+  line-height: 0.8;
 }
-header .menu-container {
-  position: relative;
-  display: inline-block;
+header .menu-button {
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
 }
-header .menu-container .overlay-menu {
+header .menu-button img {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+header .menu-button.close {
+  display: none;
+}
+header .overlay-menu {
   display: none;
   position: fixed;
   top: 80px;
@@ -21,25 +49,216 @@ header .menu-container .overlay-menu {
   height: calc(100% - 80px);
   background-color: #FFB205;
   z-index: 10;
-  padding-top: 0;
   font-family: "Bagel Fat One", sans-serif;
   color: #422B2B;
   font-size: 3rem;
 }
-header .menu-container ul {
+header .overlay-menu ul {
   list-style: none;
-  text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 5em 0;
+  text-align: center;
 }
-header .menu-container li {
-  padding: 1.5em 0;
+header .overlay-menu li {
+  padding: 1em 1;
 }
-header .menu-button:hover + .overlay-menu,
-header .overlay-menu:hover {
+header #menu-toggle:checked ~ .header-row .menu-button.open {
+  display: none;
+}
+header #menu-toggle:checked ~ .header-row .menu-button.close {
+  display: block;
+}
+header #menu-toggle:checked ~ .overlay-menu {
   display: block;
 }
 
-main h2 {
-  font-family: "Oi", cursive;
+main {
+  padding-top: 80px;
+}
+main h2, main h3 {
+  font-family: "Oi", sans-serif;
+  font-weight: 80;
+}
+main .Menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+main .Menu section {
+  display: block;
+}
+main .Menu section h2 {
+  font-size: 3rem;
+  margin-bottom: 0em;
+  border-bottom: 2px solid #422B2B;
+  padding-bottom: 0.5em;
+}
+main .Menu section.Sips h2, main .Menu section.Sips h3 {
+  color: #2B6EDA;
+}
+main .Menu section.Sips ul {
+  text-transform: uppercase;
+}
+main .Menu section.Grub h2, main .Menu section.Grub h3 {
+  color: #422B2B;
+}
+main .Menu section.Grub .item-name {
+  font-family: Lilita One, sans-serif;
+  display: block;
+  text-transform: uppercase;
+}
+main .Menu section.Grub .item-desc {
+  font-family: Fira code, sans-serif;
+  font-size: small;
+  display: block;
+  padding-top: 0.5em;
+}
+main .Menu section .columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+  row-gap: 0em;
+}
+main .Menu section .columns .column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .Menu section .columns .column:first-child {
+  border-right: 2px solid #422B2B;
+  padding-right: 1em;
+}
+main .Menu section .columns .column:last-child {
+  padding-left: 1em;
+}
+main .Menu section .columns .column ul {
+  font-family: Lilita One, sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main .Menu section .columns .column ul li {
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+}
+main .Menu section.News {
+  display: flex;
+  flex-direction: column;
+}
+main .Menu section.News h2 {
+  color: #F79EB0;
+}
+main .Menu section.News .news-content {
+  margin-bottom: 2em;
+}
+main .Menu section.News .news-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main .Menu section.News .news-content ul li {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(66, 43, 43, 0.2);
+  flex-direction: column;
+  gap: 0.5em;
+}
+main .Menu section.News .news-content ul li .item-name {
+  font-family: Lilita One, sans-serif;
+  display: block;
+}
+main .Menu section.News .news-content ul li .item-desc {
+  font-family: Fira code, sans-serif;
+  font-size: small;
+  display: block;
+  padding-top: 0.5em;
+}
+main .Menu section.News .news-content ul li:last-child {
+  border-bottom: none;
+}
+main .Menu section.News .Contact {
+  padding: 2em;
+  border-radius: 20px;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main .Menu section.News .Contact h3 {
+  color: #FFB205;
+  font-size: 3rem;
+  border: none;
+  padding: 0;
+  flex: 1;
+}
+main .Menu section.News .Contact .contact-image {
+  width: 60px;
+  height: 60px;
+  margin-left: 0em;
+  margin-right: 7em;
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+main .Menu section.News .Contact form {
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .Menu section.News .Contact form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+main .Menu section.News .Contact form .form-group.checkboxes {
+  flex-direction: row;
+  gap: 1em;
+}
+main .Menu section.News .Contact form .form-group.checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+main .Menu section.News .Contact form .form-group label {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+main .Menu section.News .Contact form .form-group input, main .Menu section.News .Contact form .form-group textarea {
+  padding: 0.8em;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  font-family: inherit;
+}
+main .Menu section.News .Contact form .form-group input::-moz-placeholder, main .Menu section.News .Contact form .form-group textarea::-moz-placeholder {
+  color: #666;
+}
+main .Menu section.News .Contact form .form-group input::placeholder, main .Menu section.News .Contact form .form-group textarea::placeholder {
+  color: #666;
+}
+main .Menu section.News .Contact form .form-group textarea {
+  resize: vertical;
+}
+main .Menu section.News .Contact form .form-group button {
+  background: #4169E1;
+  color: white;
+  border: none;
+  padding: 0.8em 2em;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 1rem;
+}
+main .Menu section.News .Contact form .form-group button:hover {
+  background: rgb(32.5909090909, 76.0454545455, 206.4090909091);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }

@@ -1,5 +1,226 @@
 main {
-  h2 {
-    font-family: 'Oi', cursive;
-  }
+  padding-top: 80px;
+  
+ h2, h3 {
+  font-family: 'Oi', sans-serif;
+  font-weight: 80;
 }
+  
+  .Menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    
+    section {
+      display: block;
+      
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 0em;
+        border-bottom: 2px solid #422B2B;
+        padding-bottom: 0.5em;
+      }
+      
+      &.Sips {
+        h2, h3 {
+          color: #2B6EDA;
+        }
+        ul {
+          text-transform: uppercase;
+        }
+      }
+
+      &.Grub {
+        h2, h3 {
+          color: #422B2B
+        }
+        .item-name {
+                font-family: Lilita One, sans-serif;
+                display: block;
+                text-transform: uppercase;
+              }
+              .item-desc {
+                font-family: Fira code, sans-serif;
+                font-size: small;
+                display: block;
+                padding-top: 0.5em;
+              }
+      }
+
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        row-gap: 0em;
+        
+        .column {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          
+          &:first-child {
+            border-right: 2px solid #422B2B;
+            padding-right: 1em;
+          }
+          
+          &:last-child {
+            padding-left: 1em;
+          }
+          
+         
+          
+          ul {
+            font-family: Lilita One, sans-serif;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            li {
+              padding: 0.5em 0;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              gap: 1em;
+            }
+          }
+        }
+      }
+      
+      
+      &.News {
+        display: flex;
+        flex-direction: column;
+        
+        h2 {
+          color: #F79EB0
+        }
+
+        .news-content {
+          margin-bottom: 2em;
+
+          
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+              margin-bottom: 1.5em;
+              padding-bottom: 1em;
+              border-bottom: 1px solid rgba(66, 43, 43, 0.2);
+              flex-direction: column;
+              gap: 0.5em;
+
+              .item-name {
+                font-family: Lilita One, sans-serif;
+                display: block;
+              }
+              .item-desc {
+                font-family: Fira code, sans-serif;
+                font-size: small;
+                display: block;
+                padding-top: 0.5em;
+              }
+              
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+        
+        
+        .Contact {
+          
+          padding: 2em;
+          border-radius: 20px;
+          margin-top: 2em;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          
+          h3 {
+            color: #FFB205;
+            font-size: 3rem;
+            
+            border: none;
+            padding: 0;
+            flex: 1;
+            
+          }
+          
+          .contact-image {
+            width: 60px;
+            height: 60px;
+            margin-left: 0em;
+            margin-right: 7em;
+            margin-bottom: 0;
+            margin-top: 2em;
+            
+          }
+          
+          form {
+            width: 100%;
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            
+            .form-group {
+              display: flex;
+              flex-direction: column;
+              
+              &.checkboxes {
+                flex-direction: row;
+                gap: 1em;
+                
+                label {
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5em;
+                }
+              }
+              
+              label {
+                font-weight: 500;
+                margin-bottom: 0.5em;
+              }
+              
+              input, textarea {
+                padding: 0.8em;
+                border: none;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.6);
+                font-family: inherit;
+                
+                &::placeholder {
+                  color: #666;
+                }
+              }
+              
+              textarea {
+                resize: vertical;
+              }
+              
+              button {
+                background: #4169E1; // Blue button
+                color: white;
+                border: none;
+                padding: 0.8em 2em;
+                border-radius: 10px;
+                font-weight: bold;
+                cursor: pointer;
+                align-self: flex-end;
+                font-size: 1rem;
+                
+                &:hover {
+                  background: darken(#4169E1, 10%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 

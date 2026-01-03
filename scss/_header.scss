@@ -3,48 +3,89 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 20; // högre än overlay
+  height: 80px;
+  z-index: 100;
+
   background-color: #2B6EDA;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; // text längst ned i headern
+
+  padding: 0 1em;
+
+  // --- Rad med titel + menyknappar ---
+  .header-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+  }
 
   h1 {
     font-family: 'Bagel Fat One', sans-serif;
     font-size: 4rem;
+    font-weight: 400; // tunnare
     color: white;
+    margin: 0;
+    line-height: 0.8;
   }
 
-  .menu-container {
-    position: relative;
-    display: inline-block;
+  .menu-button {
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+
+    img {
+      width: 32px;
+      height: auto;
+      display: block;
+    }
   }
 
+  // kryss gömt från start
+  .menu-button.close {
+    display: none;
+  }
+
+  // --- Overlay-meny ---
   .overlay-menu {
-    display: none; // startar gömd
+    display: none;
     position: fixed;
-    top: 0;
+    top: 80px; // under headern
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 80px);
     background-color: #FFB205;
-    z-index: 10; // lägre än header
+    z-index: 10;
+
     font-family: 'Bagel Fat One', sans-serif;
     color: #422B2B;
     font-size: 3rem;
 
     ul {
       list-style: none;
-      text-align: center;
       margin: 0;
-      padding: 0;
+      padding: 5em 0;
+      text-align: center;
     }
 
     li {
-      padding: 1.5em 0;
+      padding: 1em 1;
     }
   }
 
-  // Visa overlay när man hovrar på knappen
-  .menu-button:hover + .overlay-menu,
-  .overlay-menu:hover {
+  #menu-toggle:checked ~ .header-row .menu-button.open {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .header-row .menu-button.close {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .overlay-menu {
     display: block;
   }
 }
