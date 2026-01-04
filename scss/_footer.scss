@@ -1,0 +1,45 @@
+.footer-image {
+  display: block;
+  margin: 0 auto; // Centers the image horizontally
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  border-top: 5px solid #2B6EDA; // Add border on top
+  padding-top: 1em;
+  margin-top: 3em;
+  font-family: 'Fira Code', sans-serif;
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+    
+    .footer-column {
+      flex: 1;
+      
+      &.left {
+        text-align: left;
+      }
+      
+      &.center {
+        text-align: center;
+      }
+      
+      &.right {
+        text-align: right;
+      }
+      
+      address {
+        font-style: normal; // Remove italic from address
+      }
+      
+      p {
+        margin: 0.5em 0;
+        padding-top: 1em;
+      }
+    }
+  }
+}

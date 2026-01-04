@@ -74,6 +74,8 @@ header #menu-toggle:checked ~ .overlay-menu {
 
 main {
   padding-top: 80px;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 main h2, main h3 {
   font-family: "Oi", sans-serif;
@@ -90,28 +92,68 @@ main .Menu section {
 main .Menu section h2 {
   font-size: 3rem;
   margin-bottom: 0em;
-  border-bottom: 2px solid #422B2B;
-  padding-bottom: 0.5em;
+  padding-bottom: 0em;
 }
-main .Menu section.Sips h2, main .Menu section.Sips h3 {
+main .Menu section.Sips h2 {
   color: #2B6EDA;
+  border-bottom: 2px solid #2B6EDA;
+}
+main .Menu section.Sips h3 {
+  color: #2B6EDA;
+  border-top: 2px solid #2B6EDA;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+main .Menu section.Sips h3:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+main .Menu section.Sips .cup-icon {
+  width: 50px;
+  height: 50px;
+  align-items: center;
 }
 main .Menu section.Sips ul {
   text-transform: uppercase;
+  font-size: small;
 }
-main .Menu section.Grub h2, main .Menu section.Grub h3 {
+main .Menu section.Sips .columns .column:first-child {
+  border-right: 2px solid #2B6EDA;
+  padding-right: 1em;
+}
+main .Menu section.Grub h2 {
+  color: #422B2B;
+  border-bottom: 2px solid #422B2B;
+}
+main .Menu section.Grub h3 {
   color: #422B2B;
 }
-main .Menu section.Grub .item-name {
-  font-family: Lilita One, sans-serif;
-  display: block;
-  text-transform: uppercase;
-}
-main .Menu section.Grub .item-desc {
-  font-family: Fira code, sans-serif;
+main .Menu section.Grub ul {
   font-size: small;
-  display: block;
-  padding-top: 0.5em;
+}
+main .Menu section.Grub ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+main .Menu section.Grub ul li .item-name {
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main .Menu section.Grub ul li .item-desc {
+  font-family: "Fira Code", sans-serif;
+  font-size: small;
+}
+main .Menu section.Grub ul li .item-price {
+  align-self: flex-end;
+  font-family: "Lilita One", sans-serif;
+}
+main .Menu section.Grub .columns .column:first-child {
+  border-right: 2px solid #422B2B;
 }
 main .Menu section .columns {
   display: grid;
@@ -126,14 +168,13 @@ main .Menu section .columns .column {
   gap: 1em;
 }
 main .Menu section .columns .column:first-child {
-  border-right: 2px solid #422B2B;
   padding-right: 1em;
 }
 main .Menu section .columns .column:last-child {
   padding-left: 1em;
 }
 main .Menu section .columns .column ul {
-  font-family: Lilita One, sans-serif;
+  font-family: "Lilita One", sans-serif;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -151,11 +192,14 @@ main .Menu section.News {
 }
 main .Menu section.News h2 {
   color: #F79EB0;
+  border-bottom: 2px solid #F79EB0;
 }
 main .Menu section.News .news-content {
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 main .Menu section.News .news-content ul {
+  font-size: small;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -199,7 +243,7 @@ main .Menu section.News .Contact .contact-image {
   width: 60px;
   height: 60px;
   margin-left: 0em;
-  margin-right: 7em;
+  margin-right: 5em;
   margin-bottom: 0;
   margin-top: 2em;
 }
@@ -256,6 +300,45 @@ main .Menu section.News .Contact form .form-group button {
 }
 main .Menu section.News .Contact form .form-group button:hover {
   background: rgb(32.5909090909, 76.0454545455, 206.4090909091);
+}
+
+.footer-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  border-top: 5px solid #2B6EDA;
+  padding-top: 1em;
+  margin-top: 3em;
+  font-family: "Fira Code", sans-serif;
+}
+footer .footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+}
+footer .footer-columns .footer-column {
+  flex: 1;
+}
+footer .footer-columns .footer-column.left {
+  text-align: left;
+}
+footer .footer-columns .footer-column.center {
+  text-align: center;
+}
+footer .footer-columns .footer-column.right {
+  text-align: right;
+}
+footer .footer-columns .footer-column address {
+  font-style: normal;
+}
+footer .footer-columns .footer-column p {
+  margin: 0.5em 0;
+  padding-top: 1em;
 }
 
 html, body {

@@ -1,5 +1,7 @@
 main {
   padding-top: 80px;
+  padding-left: 2em;
+  padding-right: 2em;
   
  h2, h3 {
   font-family: 'Oi', sans-serif;
@@ -17,34 +19,92 @@ main {
       h2 {
         font-size: 3rem;
         margin-bottom: 0em;
-        border-bottom: 2px solid #422B2B;
-        padding-bottom: 0.5em;
+        padding-bottom: 0em;
       }
       
       &.Sips {
-        h2, h3 {
-          color: #2B6EDA;
-        }
-        ul {
-          text-transform: uppercase;
-        }
-      }
+  h2 {
+    color: #2B6EDA;
+    border-bottom: 2px solid #2B6EDA;
+  }
+  
+  h3 {
+    color: #2B6EDA;
+    border-top: 2px solid #2B6EDA;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    
+    &:first-child {
+      border-top: none; // Add this
+      padding-top: 0;
+    }
+  }
 
-      &.Grub {
-        h2, h3 {
-          color: #422B2B
+      .cup-icon {
+            width: 50px;
+            height: 50px;
+            align-items: center;
+          }
+
+  ul {
+    text-transform: uppercase;
+    
+    font-size: small;
+  }
+  
+  .columns .column {
+    &:first-child {
+      border-right: 2px solid #2B6EDA;
+      padding-right: 1em;
+      // Remove border-top: none from here
+    }
+  }
+}
+
+
+       &.Grub {
+        h2 {
+          color: #422B2B;
+          border-bottom: 2px solid #422B2B;
         }
-        .item-name {
-                font-family: Lilita One, sans-serif;
-                display: block;
-                text-transform: uppercase;
-              }
-              .item-desc {
-                font-family: Fira code, sans-serif;
-                font-size: small;
-                display: block;
-                padding-top: 0.5em;
-              }
+        
+        h3 {
+          color: #422B2B;
+        }
+        
+        ul {
+          font-size: small;
+          li {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5em;
+            margin-bottom: 1.5em;
+            
+            .item-name {
+              font-family: 'Lilita One', sans-serif;
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+            
+            .item-desc {
+              font-family: 'Fira Code', sans-serif;
+              font-size: small;
+            }
+            
+            .item-price {
+              align-self: flex-end;
+              font-family: 'Lilita One', sans-serif;
+            }
+          }
+        }
+
+        .columns .column {
+          &:first-child {
+            border-right: 2px solid #422B2B;
+          }
+        }
       }
 
       .columns {
@@ -52,14 +112,13 @@ main {
         grid-template-columns: 1fr 1fr;
         column-gap: 2em;
         row-gap: 0em;
-        
+
         .column {
           display: flex;
           flex-direction: column;
           gap: 1em;
-          
+
           &:first-child {
-            border-right: 2px solid #422B2B;
             padding-right: 1em;
           }
           
@@ -67,10 +126,8 @@ main {
             padding-left: 1em;
           }
           
-         
-          
           ul {
-            font-family: Lilita One, sans-serif;
+            font-family: 'Lilita One', sans-serif;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -86,20 +143,21 @@ main {
         }
       }
       
-      
       &.News {
         display: flex;
         flex-direction: column;
         
         h2 {
-          color: #F79EB0
+          color: #F79EB0;
+          border-bottom: 2px solid #F79EB0;
         }
 
         .news-content {
           margin-bottom: 2em;
-
+          margin-top: 1em;
           
           ul {
+            font-size: small;
             list-style: none;
             padding: 0;
             margin: 0;
@@ -153,7 +211,7 @@ main {
             width: 60px;
             height: 60px;
             margin-left: 0em;
-            margin-right: 7em;
+            margin-right: 5em;
             margin-bottom: 0;
             margin-top: 2em;
             
@@ -223,4 +281,4 @@ main {
       }
     }
   }
-} 
+}
