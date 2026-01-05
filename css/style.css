@@ -130,7 +130,7 @@ main .Menu section.Sips h3 {
   border-top: 2px solid #2B6EDA;
   padding-top: 0.5em;
   margin-top: 0.5em;
-  margin-bottom: 0em;
+  margin-bottom: -1em;
 }
 main .Menu section.Sips h3:first-child {
   border-top: none;
@@ -140,6 +140,7 @@ main .Menu section.Sips .cup-icon {
   width: 50px;
   height: 50px;
   align-items: center;
+  margin-bottom: -1em;
 }
 main .Menu section.Sips ul {
   text-transform: uppercase;
@@ -158,6 +159,10 @@ main .Menu section.Grub h3 {
   margin-bottom: -0.5em;
   margin-top: 0.5em;
 }
+main .Menu section.Grub ul li {
+  text-transform: uppercase;
+  font-size: small;
+}
 main .Menu section.Grub .columns [class*=column]:nth-child(1), main .Menu section.Grub .columns [class*=column]:nth-child(3) {
   border-right: 2px solid #422B2B;
   border-top: 2px solid #422B2B;
@@ -165,7 +170,7 @@ main .Menu section.Grub .columns [class*=column]:nth-child(1), main .Menu sectio
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(2), main .Menu section.Grub .columns [class*=column]:nth-child(4) {
   border-top: 2px solid #422B2B;
-  padding-left: 1em; /* HEEEEJ Added padding on the other side! */
+  padding-left: 0em; /* HEEEEJ Added padding on the other side! */
 }
 main .Menu section .columns {
   display: grid;
@@ -181,9 +186,10 @@ main .Menu section .columns .column {
 }
 main .Menu section .columns .column:first-child {
   padding-right: 1em;
+  padding-left: 0em;
 }
 main .Menu section .columns .column:last-child {
-  padding-left: 1em;
+  padding-left: 0em;
 }
 main .Menu section .columns .column ul {
   font-family: "Lilita One", sans-serif;
@@ -205,7 +211,7 @@ main .Menu section .columns .column ul li:has(.item-desc) {
 main .Menu section .columns .column ul li:has(.item-desc) .item-name {
   font-family: "Lilita One", sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-size: small;
   order: 1;
   flex: 0 0 auto;
 }
@@ -214,7 +220,7 @@ main .Menu section .columns .column ul li:has(.item-desc) .item-desc {
   order: 3;
   margin-top: 0.5em;
   font-family: "Fira Code", sans-serif;
-  font-size: small;
+  font-size: xx-small;
 }
 main .Menu section .columns .column ul li:has(.item-desc) .item-price {
   font-family: "Lilita One", sans-serif;
