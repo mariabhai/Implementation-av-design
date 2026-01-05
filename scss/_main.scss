@@ -36,7 +36,7 @@ main {
     margin-bottom: 0em;
     
     &:first-child {
-      border-top: none; // Add this
+      border-top: none;
       padding-top: 0;
     }
   }
@@ -57,7 +57,6 @@ main {
     &:first-child {
       border-right: 2px solid #2B6EDA;
       padding-right: 1em;
-      // Remove border-top: none from here
     }
   }
 }
@@ -72,33 +71,6 @@ main {
         h3 {
           color: #422B2B;
         }
-        
-        ul {
-          font-size: small;
-          li {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.5em;
-            margin-bottom: 1.5em;
-            
-            .item-name {
-              font-family: 'Lilita One', sans-serif;
-              text-transform: uppercase;
-              font-weight: bold;
-            }
-            
-            .item-desc {
-              font-family: 'Fira Code', sans-serif;
-              font-size: small;
-            }
-            
-            .item-price {
-              align-self: flex-end;
-              font-family: 'Lilita One', sans-serif;
-            }
-          }
-        }
 
         .columns .column {
           &:first-child {
@@ -110,7 +82,7 @@ main {
       .columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 2em;
+        column-gap: 1em;
         row-gap: 0em;
 
         .column {
@@ -138,11 +110,62 @@ main {
               justify-content: space-between;
               align-items: flex-start;
               gap: 1em;
+              
+              &:has(.item-desc) {
+                flex-wrap: wrap;
+                margin-bottom: 1.5em;
+                
+                .item-name {
+                  font-family: 'Lilita One', sans-serif;
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  order: 1;
+                  flex: 0 0 auto;
+                }
+                
+                .item-desc {
+                  width: 100%;
+                  order: 3;
+                  margin-top: 0.5em;
+                  font-family: 'Fira Code', sans-serif;
+                  font-size: small;
+                }
+                
+                .item-price {
+                  font-family: 'Lilita One', sans-serif;
+                  order: 2;
+                  flex: 0 0 auto;
+                }
+              }
             }
           }
         }
+        &.Grub {
+  ul li {
+    .item-name {
+      font-family: 'Lilita One', sans-serif;
+      text-transform: uppercase;
+    }
+    
+    .item-price {
+      font-family: 'Lilita One', sans-serif;
+    }
+  }
+}
+
       }
       
+
+
+
+
+      
+
+
+
+
+
+
       &.News {
         display: flex;
         flex-direction: column;
@@ -165,7 +188,6 @@ main {
             li {
               margin-bottom: 1.5em;
               padding-bottom: 1em;
-              border-bottom: 1px solid rgba(66, 43, 43, 0.2);
               flex-direction: column;
               gap: 0.5em;
 
@@ -190,9 +212,9 @@ main {
         
         .Contact {
           
-          padding: 2em;
+          padding: 0em;
           border-radius: 20px;
-          margin-top: 2em;
+          margin-top: 0em;
           display: flex;
           flex-wrap: wrap;
           align-items: center;
@@ -200,8 +222,8 @@ main {
           h3 {
             color: #FFB205;
             font-size: 3rem;
+            border-bottom: 2px solid #FFB205;
             
-            border: none;
             padding: 0;
             flex: 1;
             
@@ -261,7 +283,7 @@ main {
               }
               
               button {
-                background: #4169E1; // Blue button
+                background: #4169E1;
                 color: white;
                 border: none;
                 padding: 0.8em 2em;

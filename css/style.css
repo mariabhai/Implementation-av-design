@@ -129,37 +129,14 @@ main .Menu section.Grub h2 {
 main .Menu section.Grub h3 {
   color: #422B2B;
 }
-main .Menu section.Grub ul {
-  font-size: small;
-}
-main .Menu section.Grub ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5em;
-  margin-bottom: 1.5em;
-}
-main .Menu section.Grub ul li .item-name {
-  font-family: "Lilita One", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-main .Menu section.Grub ul li .item-desc {
-  font-family: "Fira Code", sans-serif;
-  font-size: small;
-}
-main .Menu section.Grub ul li .item-price {
-  align-self: flex-end;
-  font-family: "Lilita One", sans-serif;
-}
 main .Menu section.Grub .columns .column:first-child {
   border-right: 2px solid #422B2B;
 }
 main .Menu section .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 2em;
-       column-gap: 2em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
   row-gap: 0em;
 }
 main .Menu section .columns .column {
@@ -186,6 +163,36 @@ main .Menu section .columns .column ul li {
   align-items: flex-start;
   gap: 1em;
 }
+main .Menu section .columns .column ul li:has(.item-desc) {
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+}
+main .Menu section .columns .column ul li:has(.item-desc) .item-name {
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  order: 1;
+  flex: 0 0 auto;
+}
+main .Menu section .columns .column ul li:has(.item-desc) .item-desc {
+  width: 100%;
+  order: 3;
+  margin-top: 0.5em;
+  font-family: "Fira Code", sans-serif;
+  font-size: small;
+}
+main .Menu section .columns .column ul li:has(.item-desc) .item-price {
+  font-family: "Lilita One", sans-serif;
+  order: 2;
+  flex: 0 0 auto;
+}
+main .Menu section .columns.Grub ul li .item-name {
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
+}
+main .Menu section .columns.Grub ul li .item-price {
+  font-family: "Lilita One", sans-serif;
+}
 main .Menu section.News {
   display: flex;
   flex-direction: column;
@@ -207,7 +214,6 @@ main .Menu section.News .news-content ul {
 main .Menu section.News .news-content ul li {
   margin-bottom: 1.5em;
   padding-bottom: 1em;
-  border-bottom: 1px solid rgba(66, 43, 43, 0.2);
   flex-direction: column;
   gap: 0.5em;
 }
@@ -225,9 +231,9 @@ main .Menu section.News .news-content ul li:last-child {
   border-bottom: none;
 }
 main .Menu section.News .Contact {
-  padding: 2em;
+  padding: 0em;
   border-radius: 20px;
-  margin-top: 2em;
+  margin-top: 0em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -235,7 +241,7 @@ main .Menu section.News .Contact {
 main .Menu section.News .Contact h3 {
   color: #FFB205;
   font-size: 3rem;
-  border: none;
+  border-bottom: 2px solid #FFB205;
   padding: 0;
   flex: 1;
 }
