@@ -159,9 +159,13 @@ main .Menu section.Grub h3 {
   margin-bottom: -0.5em;
   margin-top: 0.5em;
 }
-main .Menu section.Grub ul li {
+main .Menu section.Grub ul li .item-name {
+  font-family: "Lilita One", sans-serif;
   text-transform: uppercase;
   font-size: small;
+}
+main .Menu section.Grub ul li .item-desc {
+  text-transform: none;
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(1), main .Menu section.Grub .columns [class*=column]:nth-child(3) {
   border-right: 2px solid #422B2B;
