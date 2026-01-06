@@ -145,6 +145,19 @@ main .Menu section.Sips .cup-icon {
 main .Menu section.Sips ul {
   text-transform: uppercase;
   font-size: small;
+  /* färger text lista */
+}
+main .Menu section.Sips ul li .item-name,
+main .Menu section.Sips ul li .item-price {
+  color: #422B2B;
+}
+main .Menu section.Sips ul li:nth-child(3n+2) .item-name,
+main .Menu section.Sips ul li:nth-child(3n+2) .item-price {
+  color: #F79EB0;
+}
+main .Menu section.Sips ul li:nth-child(3n+3) .item-name,
+main .Menu section.Sips ul li:nth-child(3n+3) .item-price {
+  color: #FFB205;
 }
 main .Menu section.Sips .columns .column:first-child {
   border-right: 2px solid #2B6EDA;
@@ -167,6 +180,10 @@ main .Menu section.Grub ul li .item-name {
 main .Menu section.Grub ul li .item-desc {
   text-transform: none;
 }
+main .Menu section.Grub .columns [class*=column] {
+  /* färger lista  */
+  /* färger lista */
+}
 main .Menu section.Grub .columns [class*=column]:nth-child(1), main .Menu section.Grub .columns [class*=column]:nth-child(3) {
   border-right: 2px solid #422B2B;
   border-top: 2px solid #422B2B;
@@ -175,6 +192,30 @@ main .Menu section.Grub .columns [class*=column]:nth-child(1), main .Menu sectio
 main .Menu section.Grub .columns [class*=column]:nth-child(2), main .Menu section.Grub .columns [class*=column]:nth-child(4) {
   border-top: 2px solid #422B2B;
   padding-left: 0em; /* HEEEEJ Added padding on the other side! */
+}
+main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li .item-name,
+main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li .item-price {
+  color: #422B2B;
+}
+main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li:nth-child(3n+2) .item-name,
+main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li:nth-child(3n+2) .item-price {
+  color: #F79EB0;
+}
+main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li:nth-child(3n+3) .item-name,
+main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li:nth-child(3n+3) .item-price {
+  color: #FFB205;
+}
+main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li .item-name,
+main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li .item-price {
+  color: #422B2B;
+}
+main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li:nth-child(3n+2) .item-name,
+main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li:nth-child(3n+2) .item-price {
+  color: #F79EB0;
+}
+main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li:nth-child(3n+3) .item-name,
+main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li:nth-child(3n+3) .item-price {
+  color: #FFB205;
 }
 main .Menu section .columns {
   display: grid;

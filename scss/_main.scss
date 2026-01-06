@@ -1,4 +1,3 @@
-
 .background-image {
   position: fixed;
   top: 0;
@@ -70,8 +69,29 @@ main {
 
   ul {
     text-transform: uppercase;
-    
     font-size: small;
+    
+    /* färger text lista */
+    li {
+      .item-name,
+      .item-price {
+        color: #422B2B;
+      }
+      
+      &:nth-child(3n+2) {
+        .item-name,
+        .item-price {
+          color: #F79EB0;
+        }
+      }
+      
+      &:nth-child(3n+3) {
+        .item-name,
+        .item-price {
+          color: #FFB205;
+        }
+      }
+    }
   }
   
   .columns .column {
@@ -124,6 +144,50 @@ ul li {
     &:nth-child(4) {
       border-top: 2px solid #422B2B;
       padding-left: 0em; /* HEEEEJ Added padding on the other side! */
+    }
+    
+    /* färger lista  */
+    &:nth-child(2) ul li {
+      .item-name,
+      .item-price {
+        color: #422B2B;
+      }
+      
+      &:nth-child(3n+2) {
+        .item-name,
+        .item-price {
+          color: #F79EB0;
+        }
+      }
+      
+      &:nth-child(3n+3) {
+        .item-name,
+        .item-price {
+          color: #FFB205;
+        }
+      }
+    }
+    
+    /* färger lista */
+    &:nth-child(4) ul li {
+      .item-name,
+      .item-price {
+        color: #422B2B;
+      }
+      
+      &:nth-child(3n+2) {
+        .item-name,
+        .item-price {
+          color: #F79EB0;
+        }
+      }
+      
+      &:nth-child(3n+3) {
+        .item-name,
+        .item-price {
+          color: #FFB205; 
+        }
+      }
     }
   }
 }
@@ -370,4 +434,4 @@ ul li {
       }
     }
   }
-} 
+}
