@@ -12,420 +12,494 @@ main {
   padding-top: 80px;
   padding-left: 2em;
   padding-right: 2em;
-  
- h2, h3 {
-  font-family: 'Oi', sans-serif;
-  font-weight: 80;
-}
-  
 
+  h2,
+  h3 {
+    font-family: "Oi", sans-serif;
+    font-weight: 80;
+  }
 
   .Menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
-    
+
     section {
       display: block;
-      
+
       h2 {
-        font-size: 3rem;
-        margin-bottom: 0em;
-        padding-bottom: 0em;
+        font-size: 4rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        line-height: 1;
       }
-      
-/* 
-████████████████████████████████████████████████
-████████████████████  SIPS  ████████████████████
-████████████████████████████████████████████████
-*/
 
-
+      /* 
+      ████████████████████████████████████████████████
+      ████████████████████  SIPS  ████████████████████
+      ████████████████████████████████████████████████
+      */
       &.Sips {
         h2 {
-        color: #2B6EDA;
-        border-bottom: 2px solid #2B6EDA;
+          color: #2b6eda;
+          border-bottom: 2px solid #2b6eda;
         }
-  
-  h3 {
-    color: #2B6EDA;
-    border-top: 2px solid #2B6EDA;
-    padding-top: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: -1em;
-    
-    &:first-child {
-      border-top: none;
-      padding-top: 0;
-    }
-  }
 
-      .cup-icon {
-            width: 50px;
-            height: 50px;
-            align-items: center;
-            margin-bottom: -1em;
-          }
-
-  ul {
-    text-transform: uppercase;
-    font-size: small;
-    
-    /* färger text lista */
-    li {
-      .item-name,
-      .item-price {
-        color: #422B2B;
-      }
-      
-      &:nth-child(3n+2) {
-        .item-name,
-        .item-price {
-          color: #F79EB0;
-        }
-      }
-      
-      &:nth-child(3n+3) {
-        .item-name,
-        .item-price {
-          color: #FFB205;
-        }
-      }
-    }
-  }
-  
-  .columns .column {
-    &:first-child {
-      border-right: 2px solid #2B6EDA;
-      padding-right: 0.5em;
-    }
-    
-  }
-}
-
-/* 
-████████████████████████████████████████████████
-████████████████████  GRUBS  ████████████████████
-████████████████████████████████████████████████
-*/
-
-
-       &.Grub {
-  h2 {
-    color: #422B2B;
-    /* border-bottom: 2px solid #422B2B;    TAR BORT TOP BORDER*/
-  }
-  
-  h3 {
-    color: #422B2B;
-    margin-bottom: -0.5em;
-    margin-top: 0.5em;
-  }
-ul li {
-    .item-name {
-      font-family: 'Lilita One', sans-serif;
-    text-transform: uppercase;
-    font-size: small;
-  }
-  .item-desc {
-    text-transform: none;
-  }
-  }
-
-  .columns [class*="column"] {
-    &:nth-child(1),
-    &:nth-child(3) {
-      border-right: 2px solid #422B2B;
-      border-top: 2px solid #422B2B;
-
-      padding-right: 1em; /* Add HEJ some padding to the right */
-    }
-    &:nth-child(2),
-    &:nth-child(4) {
-      border-top: 2px solid #422B2B;
-      padding-left: 0em; /* HEEEEJ Added padding on the other side! */
-    }
-    
-    /* färger lista  */
-    &:nth-child(2) ul li {
-      .item-name,
-      .item-price {
-        color: #422B2B;
-      }
-      
-      &:nth-child(3n+2) {
-        .item-name,
-        .item-price {
-          color: #F79EB0;
-        }
-      }
-      
-      &:nth-child(3n+3) {
-        .item-name,
-        .item-price {
-          color: #FFB205;
-        }
-      }
-    }
-    
-    /* färger lista */
-    &:nth-child(4) ul li {
-      .item-name,
-      .item-price {
-        color: #422B2B;
-      }
-      
-      &:nth-child(3n+2) {
-        .item-name,
-        .item-price {
-          color: #F79EB0;
-        }
-      }
-      
-      &:nth-child(3n+3) {
-        .item-name,
-        .item-price {
-          color: #FFB205; 
-        }
-      }
-    }
-  }
-}
-
-
-
-      .columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 1em;
-        row-gap: 0em;
-        
-
-        .column {
-          display: flex;
-          flex-direction: column;
-          gap: 1em;
-          
+        h3 {
+          color: #2b6eda;
+          border-top: 2px solid #2b6eda;
+          padding-top: 0.5em;
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          margin-top: 0.5em;
+          margin-bottom: -1em;
+          margin-left: -0.5em;
+          margin-right: -0.5em;
 
           &:first-child {
-            padding-right: 1em;
-            padding-left: 0em;
+            border-top: none;
+            padding-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
           }
-          
-          &:last-child {
-            padding-left: 0em;
+        }
 
-          }
-          
-          ul {
-            font-family: 'Lilita One', sans-serif;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            
-            li {
-              padding: 0.5em 0;
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-start;
-              gap: 0em;
-              
-              &:has(.item-desc) {
-                flex-wrap: wrap;
-                margin-bottom: 0em;
-                
-                .item-name {
-                  font-family: 'Lilita One', sans-serif;
-                  text-transform: uppercase;
-                  font-size: small;
-                  order: 1;
-                  flex: 0 0 auto;
-                }
-                
-                .item-desc {
-                  width: 100%;
-                  order: 3;
-                  margin-top: 0.5em;
-                  font-family: 'Fira Code', sans-serif;
-                  font-size: xx-small;
-                }
-                
-                .item-price {
-                  font-family: 'Lilita One', sans-serif;
-                  order: 2;
-                  flex: 0 0 auto;
-                }
+        // Border fix for specific h3 elements
+        .column:first-child h3:nth-child(3),
+        .column:first-child h3:nth-child(5) {
+          margin-left: 0;
+          padding-left: 0;
+        }
+
+        .column:last-child h3:nth-child(3) {
+          margin-left: -1em;
+          padding-left: 1em;
+        }
+
+        .cup-icon {
+          width: 50px;
+          height: 50px;
+          align-items: center;
+          margin-bottom: -1em;
+        }
+
+        ul {
+          text-transform: uppercase;
+          font-size: small;
+
+          // Color rotation for list items
+          li {
+            .item-name,
+            .item-price {
+              color: #422b2b;
+            }
+
+            &:nth-child(3n + 2) {
+              .item-name,
+              .item-price {
+                color: #f79eb0;
+              }
+            }
+
+            &:nth-child(3n + 3) {
+              .item-name,
+              .item-price {
+                color: #ffb205;
               }
             }
           }
         }
-        &.Grub {
-  ul li {
-    .item-name {
-      font-family: 'Lilita One', sans-serif;
-      text-transform: uppercase;
-      
-    }
-    
-    .item-price {
-      font-family: 'Lilita One', sans-serif;
-    }
-  }
-}
 
-}
-      
+        .columns .column:first-child {
+          border-right: 2px solid #2b6eda;
+          padding-right: 0.5em;
+        }
+      }
 
+      /* 
+      ████████████████████████████████████████████████
+      ████████████████████  GRUBS  ███████████████████
+      ████████████████████████████████████████████████
+      */
+      &.Grub {
+        h2 {
+          color: #422b2b;
+        }
 
+        h3 {
+          color: #422b2b;
+          margin-bottom: -0.5em;
+          margin-top: 0.5em;
+        }
 
+        ul li {
+          .item-name {
+            font-family: "Lilita One", sans-serif;
+            text-transform: uppercase;
+            font-size: small;
+          }
 
-      
+          .item-desc {
+            text-transform: none;
+          }
+        }
 
+        .columns [class*="column"] {
+          // Columns 1 and 3
+          &:nth-child(1),
+          &:nth-child(3) {
+            border-right: 2px solid #422b2b;
+            border-top: 2px solid #422b2b;
+            margin-left: -1em;
+            padding-right: 1em;
+          }
 
+          // Columns 2 and 4
+          &:nth-child(2),
+          &:nth-child(4) {
+            border-top: 2px solid #422b2b;
+            margin-left: -1em;
+            padding-left: 1em;
+          }
 
-/* 
-████████████████████████████████████████████████
-████████████████████  NEWS  ████████████████████
-████████████████████████████████████████████████
-*/
+          // Color rotation for column 2
+          &:nth-child(2) ul li {
+            .item-name,
+            .item-price {
+              color: #422b2b;
+            }
 
+            &:nth-child(3n + 2) {
+              .item-name,
+              .item-price {
+                color: #f79eb0;
+              }
+            }
 
+            &:nth-child(3n + 3) {
+              .item-name,
+              .item-price {
+                color: #ffb205;
+              }
+            }
+          }
 
+          // Color rotation for column 4
+          &:nth-child(4) ul li {
+            .item-name,
+            .item-price {
+              color: #422b2b;
+            }
+
+            &:nth-child(3n + 2) {
+              .item-name,
+              .item-price {
+                color: #f79eb0;
+              }
+            }
+
+            &:nth-child(3n + 3) {
+              .item-name,
+              .item-price {
+                color: #ffb205;
+              }
+            }
+          }
+        }
+      }
+
+      /* 
+      ████████████████████████████████████████████████
+      ████████████████████  NEWS  ████████████████████
+      ████████████████████████████████████████████████
+      */
       &.News {
         display: flex;
         flex-direction: column;
-        
+
         h2 {
-          color: #F79EB0;
-          border-bottom: 2px solid #F79EB0;
+          color: #f79eb0;
+          border-bottom: 2px solid #f79eb0;
+          font-size: 4rem;
         }
 
         .news-content {
-          margin-bottom: 0em;
+          margin-bottom: 0;
           margin-top: 1em;
-          
+
           ul {
             font-size: small;
             list-style: none;
             padding: 0;
             margin: 0;
-            
+
             li {
               margin-bottom: 1.5em;
-              padding-bottom: 1em;
+              padding-bottom: 0;
               flex-direction: column;
               gap: 0.5em;
 
               .item-name {
-                font-family: Lilita One, sans-serif;
+                font-family: "Lilita One", sans-serif;
                 display: block;
               }
+
               .item-desc {
-                font-family: Fira code, sans-serif;
+                font-family: "Fira Code", sans-serif;
                 font-size: small;
                 display: block;
                 padding-top: 0.5em;
+                max-width: 450px;
               }
-              
+
               &:last-child {
                 border-bottom: none;
               }
             }
           }
         }
-        
+
         /* 
-████████████████████████████████████████████████
-███████████████████  CONTACT  ██████████████████
-████████████████████████████████████████████████
-*/
-
-
+        ████████████████████████████████████████████████
+        ███████████████████  CONTACT  ██████████████████
+        ████████████████████████████████████████████████
+        */
         .Contact {
-          
-          padding: 0em;
+          padding: 0;
           border-radius: 20px;
-          margin-top: 0em;
+          margin-top: 0;
           display: flex;
           flex-wrap: wrap;
-          align-items: center;
-          
+          align-items: flex-end;
+
           h3 {
-            color: #FFB205;
-            font-size: 3rem;
-            border-bottom: 2px solid #FFB205;
-            
+            color: #ffb205;
+            font-size: 4rem;
+            border-bottom: 2px solid #ffb205;
+            margin-bottom: 0.5em;
             padding: 0;
-            flex: 1;
-            
+            padding-right: 0.5em;
+            flex: 0 1 auto;
+            line-height: 1;
           }
-          
+
           .contact-image {
-            width: 60px;
-            height: 60px;
-            margin-left: 0em;
-            margin-right: 5em;
-            margin-bottom: 0;
-            margin-top: 2em;
-            
+            width: 80px;
+            height: 80px;
+            margin-left: -2em;
+            margin-right: 0;
+            margin-bottom: calc(
+              0.5em + 2px
+            ); // Align with h3 bottom (includes border)
+            margin-top: 0;
+            order: 2;
+            position: relative;
+            z-index: 1;
           }
-          
+
           form {
             width: 100%;
-            margin-top: 1em;
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            
+            margin-top: 0;
+            order: 3;
+            flex: 1 1 100%;
+            display: grid;
+            grid-template-columns: 1fr auto; // Input column + checkbox column
+            row-gap: 0;
+            column-gap: 1em;
+
             .form-group {
               display: flex;
               flex-direction: column;
-              
+
+              &:not(.checkboxes) {
+                grid-column: 1;
+              }
+
               &.checkboxes {
-                flex-direction: row;
+                grid-column: 2;
+                grid-row: 1 / 4; // Span first 3 rows to align with inputs
+                flex-direction: column;
                 gap: 1em;
-                
+                justify-content: flex-start;
+                padding-top: 1em;
+                margin-right: 23em; // Push checkboxes to the right
+
                 label {
                   display: flex;
                   align-items: center;
                   gap: 0.5em;
                 }
+
+                input[type="checkbox"] {
+                  appearance: none;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  background: #8fa8db;
+                  border: 2px solid #8fa8db;
+                  cursor: pointer;
+                  position: relative;
+
+                  &:checked {
+                    background: #2b6eda;
+                    border-color: #2b6eda;
+                  }
+
+                  &:checked::after {
+                    content: "✓";
+                    position: absolute;
+                    color: white;
+                    font-size: 14px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  }
+                }
               }
-              
+
+              // Floating label styles
+              &.floating-label {
+                position: relative;
+                margin-top: 1em;
+
+                label {
+                  position: absolute;
+                  font-family: "Fira Code", sans-serif;
+                  font-size: small;
+                  left: 0.8em;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  font-weight: 300;
+                  transition: all 0.3s ease;
+                  pointer-events: none;
+                  background: transparent;
+                  padding: 0 0.2em;
+                  color: #000000;
+                }
+
+                // Floating label active state
+                input:focus + label,
+                input:not(:placeholder-shown) + label,
+                textarea:focus + label,
+                textarea:not(:placeholder-shown) + label {
+                  top: -1em;
+                  left: 0.6em;
+                  font-size: 0.85em;
+                  color: #8fa8db;
+                  background: white;
+                }
+              }
+
               label {
                 font-weight: 500;
                 margin-bottom: 0.5em;
               }
-              
-              input, textarea {
+
+              input,
+              textarea {
                 padding: 0.8em;
                 border: none;
                 border-radius: 10px;
-                background: rgba(255, 255, 255, 0.6);
+                background: #8fa8db;
                 font-family: inherit;
-                
+                max-width: 180px;
+
                 &::placeholder {
-                  color: #666;
+                  color: transparent;
                 }
               }
-              
+
               textarea {
                 resize: vertical;
               }
-              
+
               button {
-                background: #4169E1;
+                background: #4169e1;
                 color: white;
                 border: none;
-                padding: 0.8em 2em;
+                padding: 0.5em 1.2em;
+                margin-top: 1em;
+                margin-right: 0;
                 border-radius: 10px;
                 font-weight: bold;
                 cursor: pointer;
-                align-self: flex-end;
-                font-size: 1rem;
-                
+                align-self: flex-start;
+                font-size: 0.85rem;
+                grid-column: 1;
+
                 &:hover {
-                  background: darken(#4169E1, 10%);
+                  background: darken(#4169e1, 10%);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Shared column styles (applies to both Sips and Grub)
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 0;
+
+        .column {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+
+          &:first-child {
+            padding-right: 1em;
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-left: 0;
+          }
+
+          ul {
+            font-family: "Lilita One", sans-serif;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+              padding: 0.5em 0;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              gap: 0;
+
+              // Items with descriptions
+              &:has(.item-desc) {
+                flex-wrap: wrap;
+                margin-bottom: 0;
+
+                .item-name {
+                  font-family: "Lilita One", sans-serif;
+                  text-transform: uppercase;
+                  font-size: small;
+                  order: 1;
+                  flex: 0 0 auto;
+                }
+
+                .item-desc {
+                  width: 100%;
+                  order: 3;
+                  margin-top: 0.5em;
+                  font-family: "Fira Code", sans-serif;
+                  font-size: xx-small;
+                  max-width: 200px;
+                }
+
+                .item-price {
+                  font-family: "Lilita One", sans-serif;
+                  order: 2;
+                  text-transform: uppercase;
+                  font-size: small;
+                  flex: 0 0 auto;
                 }
               }
             }
@@ -433,5 +507,13 @@ ul li {
         }
       }
     }
+  }
+
+  // Override for Grub section - tighter spacing
+  .Grub .column:not(.description-column) ul li {
+    line-height: 1;
+    padding: 0.2em 0;
+    font-size: small;
+    text-transform: uppercase;
   }
 }

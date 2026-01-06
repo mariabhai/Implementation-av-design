@@ -6,7 +6,7 @@ header {
   width: 100%;
   height: 80px;
   z-index: 100;
-  background-color: #2B6EDA;
+  background-color: #2b6eda;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -48,10 +48,10 @@ header .overlay-menu {
   left: 0;
   width: 100%;
   height: calc(100% - 80px);
-  background-color: #FFB205;
+  background-color: #ffb205;
   z-index: 10;
   font-family: "Bagel Fat One", sans-serif;
-  color: #422B2B;
+  color: #422b2b;
   font-size: 3rem;
 }
 header .overlay-menu ul {
@@ -89,7 +89,8 @@ main {
   padding-left: 2em;
   padding-right: 2em;
 }
-main h2, main h3 {
+main h2,
+main h3 {
   font-family: "Oi", sans-serif;
   font-weight: 80;
 }
@@ -107,7 +108,7 @@ main .Menu section {
   */
   /* 
   ████████████████████████████████████████████████
-  ████████████████████  GRUBS  ████████████████████
+  ████████████████████  GRUBS  ███████████████████
   ████████████████████████████████████████████████
   */
   /* 
@@ -117,24 +118,42 @@ main .Menu section {
   */
 }
 main .Menu section h2 {
-  font-size: 3rem;
-  margin-bottom: 0em;
-  padding-bottom: 0em;
+  font-size: 4rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1;
 }
 main .Menu section.Sips h2 {
-  color: #2B6EDA;
-  border-bottom: 2px solid #2B6EDA;
+  color: #2b6eda;
+  border-bottom: 2px solid #2b6eda;
 }
 main .Menu section.Sips h3 {
-  color: #2B6EDA;
-  border-top: 2px solid #2B6EDA;
+  color: #2b6eda;
+  border-top: 2px solid #2b6eda;
   padding-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   margin-top: 0.5em;
   margin-bottom: -1em;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
 }
 main .Menu section.Sips h3:first-child {
   border-top: none;
   padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+main .Menu section.Sips .column:first-child h3:nth-child(3),
+main .Menu section.Sips .column:first-child h3:nth-child(5) {
+  margin-left: 0;
+  padding-left: 0;
+}
+main .Menu section.Sips .column:last-child h3:nth-child(3) {
+  margin-left: -1em;
+  padding-left: 1em;
 }
 main .Menu section.Sips .cup-icon {
   width: 50px;
@@ -145,30 +164,28 @@ main .Menu section.Sips .cup-icon {
 main .Menu section.Sips ul {
   text-transform: uppercase;
   font-size: small;
-  /* färger text lista */
 }
 main .Menu section.Sips ul li .item-name,
 main .Menu section.Sips ul li .item-price {
-  color: #422B2B;
+  color: #422b2b;
 }
 main .Menu section.Sips ul li:nth-child(3n+2) .item-name,
 main .Menu section.Sips ul li:nth-child(3n+2) .item-price {
-  color: #F79EB0;
+  color: #f79eb0;
 }
 main .Menu section.Sips ul li:nth-child(3n+3) .item-name,
 main .Menu section.Sips ul li:nth-child(3n+3) .item-price {
-  color: #FFB205;
+  color: #ffb205;
 }
 main .Menu section.Sips .columns .column:first-child {
-  border-right: 2px solid #2B6EDA;
+  border-right: 2px solid #2b6eda;
   padding-right: 0.5em;
 }
 main .Menu section.Grub h2 {
-  color: #422B2B;
-  /* border-bottom: 2px solid #422B2B;    TAR BORT TOP BORDER*/
+  color: #422b2b;
 }
 main .Menu section.Grub h3 {
-  color: #422B2B;
+  color: #422b2b;
   margin-bottom: -0.5em;
   margin-top: 0.5em;
 }
@@ -180,49 +197,252 @@ main .Menu section.Grub ul li .item-name {
 main .Menu section.Grub ul li .item-desc {
   text-transform: none;
 }
-main .Menu section.Grub .columns [class*=column] {
-  /* färger lista  */
-  /* färger lista */
-}
 main .Menu section.Grub .columns [class*=column]:nth-child(1), main .Menu section.Grub .columns [class*=column]:nth-child(3) {
-  border-right: 2px solid #422B2B;
-  border-top: 2px solid #422B2B;
-  padding-right: 1em; /* Add HEJ some padding to the right */
+  border-right: 2px solid #422b2b;
+  border-top: 2px solid #422b2b;
+  margin-left: -1em;
+  padding-right: 1em;
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(2), main .Menu section.Grub .columns [class*=column]:nth-child(4) {
-  border-top: 2px solid #422B2B;
-  padding-left: 0em; /* HEEEEJ Added padding on the other side! */
+  border-top: 2px solid #422b2b;
+  margin-left: -1em;
+  padding-left: 1em;
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li .item-name,
 main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li .item-price {
-  color: #422B2B;
+  color: #422b2b;
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li:nth-child(3n+2) .item-name,
 main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li:nth-child(3n+2) .item-price {
-  color: #F79EB0;
+  color: #f79eb0;
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li:nth-child(3n+3) .item-name,
 main .Menu section.Grub .columns [class*=column]:nth-child(2) ul li:nth-child(3n+3) .item-price {
-  color: #FFB205;
+  color: #ffb205;
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li .item-name,
 main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li .item-price {
-  color: #422B2B;
+  color: #422b2b;
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li:nth-child(3n+2) .item-name,
 main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li:nth-child(3n+2) .item-price {
-  color: #F79EB0;
+  color: #f79eb0;
 }
 main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li:nth-child(3n+3) .item-name,
 main .Menu section.Grub .columns [class*=column]:nth-child(4) ul li:nth-child(3n+3) .item-price {
-  color: #FFB205;
+  color: #ffb205;
+}
+main .Menu section.News {
+  display: flex;
+  flex-direction: column;
+  /* 
+  ████████████████████████████████████████████████
+  ███████████████████  CONTACT  ██████████████████
+  ████████████████████████████████████████████████
+  */
+}
+main .Menu section.News h2 {
+  color: #f79eb0;
+  border-bottom: 2px solid #f79eb0;
+  font-size: 4rem;
+}
+main .Menu section.News .news-content {
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+main .Menu section.News .news-content ul {
+  font-size: small;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main .Menu section.News .news-content ul li {
+  margin-bottom: 1.5em;
+  padding-bottom: 0;
+  flex-direction: column;
+  gap: 0.5em;
+}
+main .Menu section.News .news-content ul li .item-name {
+  font-family: "Lilita One", sans-serif;
+  display: block;
+}
+main .Menu section.News .news-content ul li .item-desc {
+  font-family: "Fira Code", sans-serif;
+  font-size: small;
+  display: block;
+  padding-top: 0.5em;
+  max-width: 450px;
+}
+main .Menu section.News .news-content ul li:last-child {
+  border-bottom: none;
+}
+main .Menu section.News .Contact {
+  padding: 0;
+  border-radius: 20px;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+main .Menu section.News .Contact h3 {
+  color: #ffb205;
+  font-size: 4rem;
+  border-bottom: 2px solid #ffb205;
+  margin-bottom: 0.5em;
+  padding: 0;
+  padding-right: 0.5em;
+  flex: 0 1 auto;
+  line-height: 1;
+}
+main .Menu section.News .Contact .contact-image {
+  width: 80px;
+  height: 80px;
+  margin-left: -2em;
+  margin-right: 0;
+  margin-bottom: calc(0.5em + 2px);
+  margin-top: 0;
+  order: 2;
+  position: relative;
+  z-index: 1;
+}
+main .Menu section.News .Contact form {
+  width: 100%;
+  margin-top: 0;
+  order: 3;
+  flex: 1 1 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 0;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+main .Menu section.News .Contact form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+main .Menu section.News .Contact form .form-group:not(.checkboxes) {
+  grid-column: 1;
+}
+main .Menu section.News .Contact form .form-group.checkboxes {
+  grid-column: 2;
+  grid-row: 1/4;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: flex-start;
+  padding-top: 1em;
+  margin-right: 23em;
+}
+main .Menu section.News .Contact form .form-group.checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+main .Menu section.News .Contact form .form-group.checkboxes input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8fa8db;
+  border: 2px solid #8fa8db;
+  cursor: pointer;
+  position: relative;
+}
+main .Menu section.News .Contact form .form-group.checkboxes input[type=checkbox]:checked {
+  background: #2b6eda;
+  border-color: #2b6eda;
+}
+main .Menu section.News .Contact form .form-group.checkboxes input[type=checkbox]:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .Menu section.News .Contact form .form-group.floating-label {
+  position: relative;
+  margin-top: 1em;
+}
+main .Menu section.News .Contact form .form-group.floating-label label {
+  position: absolute;
+  font-family: "Fira Code", sans-serif;
+  font-size: small;
+  left: 0.8em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 300;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  background: transparent;
+  padding: 0 0.2em;
+  color: #000000;
+}
+main .Menu section.News .Contact form .form-group.floating-label input:not(:-moz-placeholder) + label, main .Menu section.News .Contact form .form-group.floating-label textarea:not(:-moz-placeholder) + label {
+  top: -1em;
+  left: 0.6em;
+  font-size: 0.85em;
+  color: #8fa8db;
+  background: white;
+}
+main .Menu section.News .Contact form .form-group.floating-label input:focus + label,
+main .Menu section.News .Contact form .form-group.floating-label input:not(:placeholder-shown) + label,
+main .Menu section.News .Contact form .form-group.floating-label textarea:focus + label,
+main .Menu section.News .Contact form .form-group.floating-label textarea:not(:placeholder-shown) + label {
+  top: -1em;
+  left: 0.6em;
+  font-size: 0.85em;
+  color: #8fa8db;
+  background: white;
+}
+main .Menu section.News .Contact form .form-group label {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+main .Menu section.News .Contact form .form-group input,
+main .Menu section.News .Contact form .form-group textarea {
+  padding: 0.8em;
+  border: none;
+  border-radius: 10px;
+  background: #8fa8db;
+  font-family: inherit;
+  max-width: 180px;
+}
+main .Menu section.News .Contact form .form-group input::-moz-placeholder, main .Menu section.News .Contact form .form-group textarea::-moz-placeholder {
+  color: transparent;
+}
+main .Menu section.News .Contact form .form-group input::placeholder,
+main .Menu section.News .Contact form .form-group textarea::placeholder {
+  color: transparent;
+}
+main .Menu section.News .Contact form .form-group textarea {
+  resize: vertical;
+}
+main .Menu section.News .Contact form .form-group button {
+  background: #4169e1;
+  color: white;
+  border: none;
+  padding: 0.5em 1.2em;
+  margin-top: 1em;
+  margin-right: 0;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+  font-size: 0.85rem;
+  grid-column: 1;
+}
+main .Menu section.News .Contact form .form-group button:hover {
+  background: rgb(32.5909090909, 76.0454545455, 206.4090909091);
 }
 main .Menu section .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 1em;
        column-gap: 1em;
-  row-gap: 0em;
+  row-gap: 0;
 }
 main .Menu section .columns .column {
   display: flex;
@@ -231,10 +451,10 @@ main .Menu section .columns .column {
 }
 main .Menu section .columns .column:first-child {
   padding-right: 1em;
-  padding-left: 0em;
+  padding-left: 0;
 }
 main .Menu section .columns .column:last-child {
-  padding-left: 0em;
+  padding-left: 0;
 }
 main .Menu section .columns .column ul {
   font-family: "Lilita One", sans-serif;
@@ -247,11 +467,11 @@ main .Menu section .columns .column ul li {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 0em;
+  gap: 0;
 }
 main .Menu section .columns .column ul li:has(.item-desc) {
   flex-wrap: wrap;
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 main .Menu section .columns .column ul li:has(.item-desc) .item-name {
   font-family: "Lilita One", sans-serif;
@@ -266,137 +486,20 @@ main .Menu section .columns .column ul li:has(.item-desc) .item-desc {
   margin-top: 0.5em;
   font-family: "Fira Code", sans-serif;
   font-size: xx-small;
+  max-width: 200px;
 }
 main .Menu section .columns .column ul li:has(.item-desc) .item-price {
   font-family: "Lilita One", sans-serif;
   order: 2;
+  text-transform: uppercase;
+  font-size: small;
   flex: 0 0 auto;
 }
-main .Menu section .columns.Grub ul li .item-name {
-  font-family: "Lilita One", sans-serif;
+main .Grub .column:not(.description-column) ul li {
+  line-height: 1;
+  padding: 0.2em 0;
+  font-size: small;
   text-transform: uppercase;
-}
-main .Menu section .columns.Grub ul li .item-price {
-  font-family: "Lilita One", sans-serif;
-}
-main .Menu section.News {
-  display: flex;
-  flex-direction: column;
-  /* 
-  ████████████████████████████████████████████████
-  ███████████████████  CONTACT  ██████████████████
-  ████████████████████████████████████████████████
-  */
-}
-main .Menu section.News h2 {
-  color: #F79EB0;
-  border-bottom: 2px solid #F79EB0;
-}
-main .Menu section.News .news-content {
-  margin-bottom: 0em;
-  margin-top: 1em;
-}
-main .Menu section.News .news-content ul {
-  font-size: small;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-main .Menu section.News .news-content ul li {
-  margin-bottom: 1.5em;
-  padding-bottom: 1em;
-  flex-direction: column;
-  gap: 0.5em;
-}
-main .Menu section.News .news-content ul li .item-name {
-  font-family: Lilita One, sans-serif;
-  display: block;
-}
-main .Menu section.News .news-content ul li .item-desc {
-  font-family: Fira code, sans-serif;
-  font-size: small;
-  display: block;
-  padding-top: 0.5em;
-}
-main .Menu section.News .news-content ul li:last-child {
-  border-bottom: none;
-}
-main .Menu section.News .Contact {
-  padding: 0em;
-  border-radius: 20px;
-  margin-top: 0em;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-main .Menu section.News .Contact h3 {
-  color: #FFB205;
-  font-size: 3rem;
-  border-bottom: 2px solid #FFB205;
-  padding: 0;
-  flex: 1;
-}
-main .Menu section.News .Contact .contact-image {
-  width: 60px;
-  height: 60px;
-  margin-left: 0em;
-  margin-right: 5em;
-  margin-bottom: 0;
-  margin-top: 2em;
-}
-main .Menu section.News .Contact form {
-  width: 100%;
-  margin-top: 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-main .Menu section.News .Contact form .form-group {
-  display: flex;
-  flex-direction: column;
-}
-main .Menu section.News .Contact form .form-group.checkboxes {
-  flex-direction: row;
-  gap: 1em;
-}
-main .Menu section.News .Contact form .form-group.checkboxes label {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-main .Menu section.News .Contact form .form-group label {
-  font-weight: 500;
-  margin-bottom: 0.5em;
-}
-main .Menu section.News .Contact form .form-group input, main .Menu section.News .Contact form .form-group textarea {
-  padding: 0.8em;
-  border: none;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.6);
-  font-family: inherit;
-}
-main .Menu section.News .Contact form .form-group input::-moz-placeholder, main .Menu section.News .Contact form .form-group textarea::-moz-placeholder {
-  color: #666;
-}
-main .Menu section.News .Contact form .form-group input::placeholder, main .Menu section.News .Contact form .form-group textarea::placeholder {
-  color: #666;
-}
-main .Menu section.News .Contact form .form-group textarea {
-  resize: vertical;
-}
-main .Menu section.News .Contact form .form-group button {
-  background: #4169E1;
-  color: white;
-  border: none;
-  padding: 0.8em 2em;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  align-self: flex-end;
-  font-size: 1rem;
-}
-main .Menu section.News .Contact form .form-group button:hover {
-  background: rgb(32.5909090909, 76.0454545455, 206.4090909091);
 }
 
 .footer-image {
@@ -407,11 +510,11 @@ main .Menu section.News .Contact form .form-group button:hover {
 }
 
 footer {
-  border-top: 5px solid #2B6EDA;
+  border-top: 5px solid #2b6eda;
   padding-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  margin-top: 3em;
+  margin-top: 1em;
   font-family: "Fira Code", sans-serif;
 }
 footer .footer-columns {
@@ -440,6 +543,279 @@ footer .footer-columns .footer-column p {
   padding-top: 1em;
 }
 
+/* 
+████████████████████████████████████████████████
+████████████████  RESPONSIVE  ██████████████████
+████████████████████████████████████████████████
+*/
+@media (max-width: 1024px) {
+  main {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  main .Menu {
+    grid-template-columns: 1fr;
+    gap: 3em;
+  }
+  main .Menu section h2 {
+    font-size: 3rem;
+  }
+  main .Menu section.Sips .columns {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  main .Menu section.Sips .columns .column:first-child {
+    border-right: none;
+    border-bottom: 2px solid #2b6eda;
+    padding-right: 0;
+    padding-bottom: 1em;
+  }
+  main .Menu section.Sips h3 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  main .Menu section.Grub .columns {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  main .Menu section.Grub .columns [class*=column] {
+    border-right: none !important;
+    border-bottom: 2px solid #422b2b;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 1em;
+  }
+  main .Menu section.Grub .columns [class*=column]:last-child {
+    border-bottom: none;
+  }
+  main .Menu section.News .Contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  main .Menu section.News .Contact h3 {
+    flex: 0 1 auto;
+    padding-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  main .Menu section.News .Contact .contact-image {
+    order: 2;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: calc(0.5em + 2px);
+  }
+  main .Menu section.News .Contact form {
+    order: 3;
+    flex: 1 1 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  main .Menu section.News .Contact form .form-group:not(.checkboxes) {
+    grid-column: 1;
+  }
+  main .Menu section.News .Contact form .form-group.checkboxes {
+    grid-column: 1;
+    grid-row: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 0;
+    padding-top: 0;
+    gap: 1em;
+  }
+  main .Menu section.News .Contact form .form-group input,
+  main .Menu section.News .Contact form .form-group textarea {
+    max-width: 100%;
+  }
+  main .Menu section.News .Contact form .form-group button {
+    margin-right: 0;
+  }
+  footer .footer-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer-columns .footer-column.left, footer .footer-columns .footer-column.right {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    height: 60px;
+    padding: 0 0.5em;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header .menu-button img {
+    width: 24px;
+  }
+  header .overlay-menu {
+    top: 60px;
+    height: calc(100% - 60px);
+    font-size: 2rem;
+  }
+  header .overlay-menu ul {
+    padding: 3em 0;
+  }
+  main {
+    padding-top: 70px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  main .Menu {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  main .Menu section h2 {
+    font-size: 2.5rem;
+  }
+  main .Menu section h3 {
+    font-size: 1.2rem;
+  }
+  main .Menu section.Sips .columns {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+  main .Menu section.Sips .columns .column:first-child {
+    border-right: none;
+    border-bottom: 2px solid #2b6eda;
+    padding-right: 0;
+    padding-bottom: 1em;
+  }
+  main .Menu section.Sips .columns .column:last-child {
+    padding-left: 0;
+  }
+  main .Menu section.Sips h3 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+  main .Menu section.Sips .cup-icon {
+    width: 35px;
+    height: 35px;
+  }
+  main .Menu section.Grub .columns {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+  main .Menu section.Grub .columns .column,
+  main .Menu section.Grub .columns [class*=column] {
+    border-right: none !important;
+    border-bottom: 2px solid #422b2b;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 1em;
+  }
+  main .Menu section.Grub .columns .column:last-child,
+  main .Menu section.Grub .columns [class*=column]:last-child {
+    border-bottom: none;
+  }
+  main .Menu section.Grub ul li .item-desc {
+    font-size: 0.75rem;
+    max-width: 100%;
+  }
+  main .Menu section.News h2 {
+    font-size: 2.5rem;
+  }
+  main .Menu section.News .news-content ul li .item-name {
+    font-size: 0.9rem;
+  }
+  main .Menu section.News .news-content ul li .item-desc {
+    font-size: 0.85rem;
+    max-width: 100%;
+  }
+  main .Menu section.News .Contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  main .Menu section.News .Contact h3 {
+    font-size: 2.5rem;
+    flex: 0 1 auto;
+    padding-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  main .Menu section.News .Contact .contact-image {
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: calc(0.5em + 2px);
+    order: 2;
+  }
+  main .Menu section.News .Contact form {
+    order: 3;
+    flex: 1 1 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  main .Menu section.News .Contact form .form-group.checkboxes {
+    grid-column: 1;
+    grid-row: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 0;
+    padding-top: 0;
+    gap: 0.8em;
+    margin-top: 0.5em;
+  }
+  main .Menu section.News .Contact form .form-group.checkboxes label {
+    font-size: 0.9rem;
+  }
+  main .Menu section.News .Contact form .form-group input,
+  main .Menu section.News .Contact form .form-group textarea {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+  main .Menu section.News .Contact form .form-group button {
+    width: 100%;
+    margin-right: 0;
+    padding: 1em;
+  }
+  footer {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  footer .footer-columns {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+  footer .footer-columns .footer-column.left, footer .footer-columns .footer-column.right {
+    text-align: center;
+  }
+  footer .footer-columns .footer-column p {
+    font-size: 0.85rem;
+    padding-top: 0.5em;
+  }
+  .footer-image {
+    max-width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  main .Menu section h2 {
+    font-size: 2rem;
+  }
+  main .Menu section h3 {
+    font-size: 1rem;
+  }
+  main .Menu section ul {
+    font-size: 0.85rem;
+  }
+  main .Menu section.News h2 {
+    font-size: 2rem;
+  }
+  main .Menu section.News .Contact h3 {
+    font-size: 2rem;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;

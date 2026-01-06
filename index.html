@@ -1,238 +1,524 @@
 <!DOCTYPE html>
-<html lang="sv">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Good Morning Club</title>
-    <meta name="description" content="Good Morning Club - Cafe"/>
+    <meta name="description" content="Good Morning Club - Cafe" />
     <link rel="icon" href="bilder/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Code:wght@300..700&family=Lilita+One&family=Oi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fira+Code:wght@300..700&family=Lilita+One&family=Oi&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="bilder/background.jpg" alt="" class="background-image" />
 
-</head>
-<body>
-    <img src="bilder/background.jpg" alt="" class="background-image">
-    
     <header>
-        <input type="checkbox" id="menu-toggle" hidden>
-        <div class="header-row">
-            <h1>Good Morning Club</h1>
+      <input type="checkbox" id="menu-toggle" hidden />
+      <div class="header-row">
+        <h1>Good Morning Club</h1>
 
-            <!-- Öppna meny -->
-            <label for="menu-toggle" class="menu-button open">
-                <img src="bilder/menubtn.svg" alt="Open menu">
-            </label>
+        <!-- Öppna meny -->
+        <label for="menu-toggle" class="menu-button open">
+          <img src="bilder/menubtn.svg" alt="Open menu" />
+        </label>
 
-            <!-- Stäng meny -->
-            <label for="menu-toggle" class="menu-button close">
-                <img src="bilder/close.svg" alt="Close menu">
-            </label>
-        </div>
-        <nav class="overlay-menu">
-            <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <!-- Stäng meny -->
+        <label for="menu-toggle" class="menu-button close">
+          <img src="bilder/close.svg" alt="Close menu" />
+        </label>
+      </div>
+      <nav class="overlay-menu">
+        <ul>
+          <li>Home</li>
+          <li>Menu</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="Menu">
-            <section class="Sips">
-    <h2>Sips</h2>
-    <div class="columns">
-        <div class="column">
-            <h3>Coffee</h3>
-            <ul>
-                <li><span class="item-name">Espresso</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Flat white</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Macchiato</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Americano</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Cappucino</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Cortado</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Piccolo</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Filter</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Latte</span>
-                                        <img src="bilder/coffee_cup.svg" alt="coffe cup icon" class="cup-icon">
-
-                    <span class="item-price">15 kr</span>
+      <div class="Menu">
+        <section class="Sips">
+          <h2>Sips</h2>
+          <div class="columns">
+            <div class="column">
+              <h3>Coffee</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Espresso</span
+                  ><span class="item-price">15 kr</span>
                 </li>
-            </ul>
-            
-            <h3>Special Coffee</h3>
-            <ul>
-                <li><span class="item-name">Vietnamese drip</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Coconut coffee</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Sunrise brew</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Cold brew</span><span class="item-price">15 kr</span></li>
-            </ul>
-            
-            <h3>Iced Coffee</h3>
-            <ul>
-                <li><span class="item-name">Iced black</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Iced espresso</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Iced filter</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Iced latte</span><span class="item-price">15 kr</span></li>
-            </ul>
-        </div>
+                <li>
+                  <span class="item-name">Flat white</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Macchiato</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Americano</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Cappucino</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Cortado</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Piccolo</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Filter</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Latte</span>
+                  <img
+                    src="bilder/coffee_cup.svg"
+                    alt="coffe cup icon"
+                    class="cup-icon"
+                  />
+                  <span class="item-price">15 kr</span>
+                </li>
+              </ul>
 
-        <div class="column">
-            <h3>Non-Coffee</h3>
-            <ul>
-                <li><span class="item-name">Kombucha</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Soft Drink</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Iced Matcha</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Orange Juice</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Earl Grey Tea</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Hot Chocolate</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">English Breakfast Tea</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Iced Lemon Tea</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Golden Latte</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Apple Juice</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Still Water</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Chai Latte</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Lemon Tea</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Green Tea</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Matcha</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Oat Milk</span><span class="item-price">15 kr</span></li>
-            </ul>
-            
-            <h3>Add-ons</h3>
-            <ul>
-                <li><span class="item-name">Almond milk</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Coconut milk</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Extra shot</span><span class="item-price">15 kr</span></li>
-                <li><span class="item-name">Decaf</span><span class="item-price">15 kr</span></li>
-            </ul>
-        </div>
-    </div>
+              <h3>Special Coffee</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Vietnamese drip</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Coconut coffee</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Sunrise brew</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Cold brew</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+              </ul>
 
-            </section>
-
-            <section class="Grub">
-                <h2>Grub</h2>
-                <div class="columns">
-
-                    <div class="column description-column">
-                        <h3>Savory Brekkie</h3>
-                        <ul>
-                            <li><span class="item-name">Shakshuka</span><span class="item-desc">Two poached eggs in a pan with tomato, peppers, and onions. Sourdough bread.</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Avocado Toast (V)</span><span class="item-desc">Avocado on sourdough bread with piri piri sauce. Spice it up with an add-on!</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Eggs Benedict</span><span class="item-desc">Two poached eggs on toast topped with Hollandaise.</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Salmon Bagel</span><span class="item-desc">Salmon on sourdough bread with cream cheese and dill.</span><span class="item-price">15 kr</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="column">
-                        <h3>Baked Goods</h3>
-                        <ul>
-                            <li><span class="item-name">Donut</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Cronut</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Croissant</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Cinnamon Roll</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">New York Croissant</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Cardamom Roll</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Gâteau Marcel</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Carrot Cake (V)</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Cheese Cake</span><span class="item-price">15 kr</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="column description-column">
-                        <h3>Sweet Brekkie</h3>
-                        <ul>
-                            <li><span class="item-name">Acai Bowl</span><span class="item-desc">Acai sorbet blended with banana, topped with coconut and homemade granola.</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Fluffy Pancakes</span><span class="item-desc">Stack of three fluffy pancakes with fresh fruit covered in maple syrup.</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Waffles (V)</span><span class="item-desc">Belgian waffles with fresh fruit and chocolate sauce.</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">French Toast</span><span class="item-desc">Two slices of buttery brioche bread with cinnamon sugar and maple syrup.</span><span class="item-price">15 kr</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="column">
-                        <h3>Add Ons</h3>
-                        <ul>
-                            <li><span class="item-name">Salmon</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Egg of Choice</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Ice Cream Scoop</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Sauteed Spinach</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Sourdough Slice</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Tomatoes</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Fresh Fruit</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Cheese (V)</span><span class="item-price">15 kr</span></li>
-                            <li><span class="item-name">Apple Slices</span><span class="item-price">15 kr</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-           
-<section class="News">
-    <h2>News</h2>
-    <div class="news-content">
-        
-        <ul>
-            <li><span class="item-name">2025-DEC-24 XMAS DEALS</span><span class="item-desc"> We're open on Christmas Eve! Pop in for a fresh breakfast to get you all calm and demure for the in-laws lunch :)</span></li>
-            <li><span class="item-name">2025-NOV-20 SUNSHINE ON THE MENU</span><span class="item-desc"> We've added an Acai Bowl to the breakfast menu to keep your energy levels up throughout the gloomy darkness.</span></li>
-            <li><span class="item-name">2025-OCT-30 PUMPKIN SPICE LATTE WEEKEND</span><span class="item-desc"> Only this weekend, on the menu - our very own pumpkin spice blend! Available with oat, almond and cow's milk!</span></li>
-            <li><span class="item-name">2025-SEP-01 CARROT CAKE BONANZA</span><span class="item-desc"> Our carrot cake recipe is now renewed and better than ever. Pop in for a slice. All organic, of course!</span></li>
-        </ul>
-    </div>
-    
-    <div class="Contact">
-        <h3>Contact</h3>
-        <img src="bilder/heart.svg" alt="Dekorativ bild" class="contact-image">
-        <form action="#" method="post">
-            <div class="form-group">
-                <label>First Name
-                    <input type="text" name="first-name" class="form-input" required>
-                </label>
+              <h3>Iced Coffee</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Iced black</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Iced espresso</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Iced filter</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Iced latte</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+              </ul>
             </div>
-            <div class="form-group">
-                <label>E-mail
-                    <input type="email" name="email" class="form-input" required>
-                </label>
+
+            <div class="column">
+              <h3>Non-Coffee</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Kombucha</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Soft Drink</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Iced Matcha</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Orange Juice</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Earl Grey Tea</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Hot Chocolate</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">English Breakfast Tea</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Iced Lemon Tea</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Golden Latte</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Apple Juice</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Still Water</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Chai Latte</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Lemon Tea</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Green Tea</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Matcha</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Oat Milk</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+              </ul>
+
+              <h3>Add-ons</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Almond milk</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Coconut milk</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Extra shot</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Decaf</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+              </ul>
             </div>
-            <div class="form-group">
-                <label>Message
-                    <textarea name="message" class="form-textarea" rows="5" required></textarea>
-                </label>
+          </div>
+        </section>
+
+        <section class="Grub">
+          <h2>Grub</h2>
+          <div class="columns">
+            <div class="column description-column">
+              <h3>Savory Brekkie</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Shakshuka</span
+                  ><span class="item-desc"
+                    >Two poached eggs in a pan with tomato, peppers, and onions.
+                    Sourdough bread.</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Avocado Toast (V)</span
+                  ><span class="item-desc"
+                    >Avocado on sourdough bread with piri piri sauce. Spice it
+                    up with an add-on!</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Eggs Benedict</span
+                  ><span class="item-desc"
+                    >Two poached eggs on toast topped with Hollandaise.</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Salmon Bagel</span
+                  ><span class="item-desc"
+                    >Salmon on sourdough bread with cream cheese and dill.</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+              </ul>
             </div>
-            <div class="form-group checkboxes">
-                <label><input type="checkbox" name="interest" value="sips" class="form-checkbox"> Sips</label>
-                <label><input type="checkbox" name="interest" value="grub" class="form-checkbox"> Grub</label>
-                <label><input type="checkbox" name="interest" value="other" class="form-checkbox"> Other</label>
+
+            <div class="column">
+              <h3>Baked Goods</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Donut</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Cronut</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Croissant</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Cinnamon Roll</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">New York Croissant</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Cardamom Roll</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Gâteau Marcel</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Carrot Cake (V)</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Cheese Cake</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+              </ul>
             </div>
-            <div class="form-group">
+
+            <div class="column description-column">
+              <h3>Sweet Brekkie</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Acai Bowl</span
+                  ><span class="item-desc"
+                    >Acai sorbet blended with banana, topped with coconut and
+                    homemade granola.</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Fluffy Pancakes</span
+                  ><span class="item-desc"
+                    >Stack of three fluffy pancakes with fresh fruit covered in
+                    maple syrup.</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Waffles (V)</span
+                  ><span class="item-desc"
+                    >Belgian waffles with fresh fruit and chocolate sauce.</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">French Toast</span
+                  ><span class="item-desc"
+                    >Two slices of buttery brioche bread with cinnamon sugar and
+                    maple syrup.</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <h3>Add Ons</h3>
+              <ul>
+                <li>
+                  <span class="item-name">Salmon</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Egg of Choice</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Ice Cream Scoop</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Sauteed Spinach</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Sourdough Slice</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Tomatoes</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Fresh Fruit</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Cheese (V)</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+                <li>
+                  <span class="item-name">Apple Slices</span
+                  ><span class="item-price">15 kr</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="News">
+          <h2>News</h2>
+          <div class="news-content">
+            <ul>
+              <li>
+                <span class="item-name">2025-DEC-24 XMAS DEALS</span
+                ><span class="item-desc">
+                  We're open on Christmas Eve! Pop in for a fresh breakfast to
+                  get you all calm and demure for the in-laws lunch :)</span
+                >
+              </li>
+              <li>
+                <span class="item-name">2025-NOV-20 SUNSHINE ON THE MENU</span
+                ><span class="item-desc">
+                  We've added an Acai Bowl to the breakfast menu to keep your
+                  energy levels up throughout the gloomy darkness.</span
+                >
+              </li>
+              <li>
+                <span class="item-name"
+                  >2025-OCT-30 PUMPKIN SPICE LATTE WEEKEND</span
+                ><span class="item-desc">
+                  Only this weekend, on the menu - our very own pumpkin spice
+                  blend! Available with oat, almond and cow's milk!</span
+                >
+              </li>
+              <li>
+                <span class="item-name">2025-SEP-01 CARROT CAKE BONANZA</span
+                ><span class="item-desc">
+                  Our carrot cake recipe is now renewed and better than ever.
+                  Pop in for a slice. All organic, of course!</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="Contact">
+            <h3>Contact</h3>
+            <img
+              src="bilder/heart.svg"
+              alt="Dekorativ bild"
+              class="contact-image"
+            />
+            <form action="#" method="post">
+              <div class="form-group floating-label">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  class="form-input"
+                  placeholder=" "
+                  required
+                />
+                <label for="first-name">First Name</label>
+              </div>
+
+              <div class="form-group floating-label">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  placeholder=" "
+                  required
+                />
+                <label for="email">E-mail</label>
+              </div>
+
+              <div class="form-group floating-label">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-textarea"
+                  placeholder=" "
+                  rows="5"
+                  required
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+              <div class="form-group checkboxes">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interest"
+                    value="sips"
+                    class="form-checkbox"
+                  />
+                  Sips</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interest"
+                    value="grub"
+                    class="form-checkbox"
+                  />
+                  Grub</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interest"
+                    value="other"
+                    class="form-checkbox"
+                  />
+                  Other</label
+                >
+              </div>
+              <div class="form-group">
                 <button type="submit">SEND</button>
-            </div>
-        </form>
-    </div>
-    </section>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <img src="bilder/random-line.svg" alt="Dekorativ bild" class="footer-image">
+    <img
+      src="bilder/random-line.svg"
+      alt="Dekorativ bild"
+      class="footer-image"
+    />
 
     <footer>
-        <div class="footer-columns">
-            <div class="footer-column left">
-                <address>
-                    <p>Arabicagatan 13</p>
-                    <p>133 71 Robustad</p>
-                </address>
-            </div>
-            <div class="footer-column center">
-                <p>Open Daily 8.00 → 15.00</p>
-                <p>Facebook | Instagram | Spotify</p>
-                
-            </div>
-            <div class="footer-column right">
-                <p>info@goodmorningclub.se</p>
-                <p>070-123 45 67</p>
-            </div>
+      <div class="footer-columns">
+        <div class="footer-column left">
+          <address>
+            <p>Arabicagatan 13</p>
+            <p>133 71 Robustad</p>
+          </address>
         </div>
+        <div class="footer-column center">
+          <p>Open Daily 8.00 → 15.00</p>
+          <p>Facebook | Instagram | Spotify</p>
+        </div>
+        <div class="footer-column right">
+          <p>info@goodmorningclub.se</p>
+          <p>070-123 45 67</p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

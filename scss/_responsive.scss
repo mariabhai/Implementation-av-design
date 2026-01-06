@@ -1,0 +1,383 @@
+
+/* 
+████████████████████████████████████████████████
+████████████████  RESPONSIVE  ██████████████████
+████████████████████████████████████████████████
+*/
+
+// Tablet (768px - 1024px)
+@media (max-width: 1024px) {
+  main {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+
+    .Menu {
+      grid-template-columns: 1fr; // Stack sections vertically
+      gap: 3em;
+
+      section {
+        h2 {
+          font-size: 3rem;
+        }
+
+        // Sips section adjustments
+        &.Sips {
+          .columns {
+            grid-template-columns: 1fr; // Stack columns vertically
+            gap: 2em;
+
+            .column {
+              &:first-child {
+                border-right: none;
+                border-bottom: 2px solid #2b6eda;
+                padding-right: 0;
+                padding-bottom: 1em;
+              }
+            }
+          }
+
+          h3 {
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+          }
+        }
+
+        // Grub section adjustments
+        &.Grub {
+          .columns {
+            grid-template-columns: 1fr; // Stack all columns
+            gap: 2em;
+
+            [class*="column"] {
+              border-right: none !important;
+              border-bottom: 2px solid #422b2b;
+              margin-left: 0 !important;
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+              padding-bottom: 1em;
+
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+
+        // News section adjustments
+        &.News {
+          // Contact form adjustments
+          .Contact {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+
+            h3 {
+              flex: 0 1 auto;
+              padding-right: 0.5em;
+              margin-bottom: 0.5em;
+            }
+
+            .contact-image {
+              order: 2;
+              margin-left: 0;
+              margin-right: 0;
+              margin-top: 0;
+              margin-bottom: calc(0.5em + 2px);
+            }
+
+            form {
+              order: 3;
+              flex: 1 1 100%;
+              width: 100%;
+              grid-template-columns: 1fr; // Single column layout
+
+              .form-group {
+                &:not(.checkboxes) {
+                  grid-column: 1;
+                }
+
+                &.checkboxes {
+                  grid-column: 1;
+                  grid-row: auto;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  margin-right: 0;
+                  padding-top: 0;
+                  gap: 1em;
+                }
+
+                input,
+                textarea {
+                  max-width: 100%;
+                }
+
+                button {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Footer adjustments
+  footer .footer-columns {
+    flex-direction: column;
+    text-align: center;
+
+    .footer-column {
+      &.left,
+      &.right {
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Mobile (up to 767px)
+@media (max-width: 767px) {
+  header {
+    height: 60px;
+    padding: 0 0.5em;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .menu-button img {
+      width: 24px;
+    }
+
+    .overlay-menu {
+      top: 60px;
+      height: calc(100% - 60px);
+      font-size: 2rem;
+
+      ul {
+        padding: 3em 0;
+      }
+    }
+  }
+
+  main {
+    padding-top: 70px;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .Menu {
+      grid-template-columns: 1fr;
+      gap: 2em;
+
+      section {
+        h2 {
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        // Sips section
+        &.Sips {
+          .columns {
+            grid-template-columns: 1fr;
+            gap: 1.5em;
+
+            .column {
+              &:first-child {
+                border-right: none;
+                border-bottom: 2px solid #2b6eda;
+                padding-right: 0;
+                padding-bottom: 1em;
+              }
+
+              &:last-child {
+                padding-left: 0;
+              }
+            }
+          }
+
+          h3 {
+            margin-left: 0 !important;
+            padding-left: 0 !important;
+            margin-right: 0 !important;
+            padding-right: 0 !important;
+          }
+
+          .cup-icon {
+            width: 35px;
+            height: 35px;
+          }
+        }
+
+        // Grub section
+        &.Grub {
+          .columns {
+            grid-template-columns: 1fr;
+            gap: 1.5em;
+
+            .column,
+            [class*="column"] {
+              border-right: none !important;
+              border-bottom: 2px solid #422b2b;
+              margin-left: 0 !important;
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+              padding-bottom: 1em;
+
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+
+          ul li {
+            .item-desc {
+              font-size: 0.75rem;
+              max-width: 100%;
+            }
+          }
+        }
+
+        // News section
+        &.News {
+          h2 {
+            font-size: 2.5rem;
+          }
+
+          .news-content ul li {
+            .item-name {
+              font-size: 0.9rem;
+            }
+
+            .item-desc {
+              font-size: 0.85rem;
+              max-width: 100%;
+            }
+          }
+
+          // Contact section
+          .Contact {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+
+            h3 {
+              font-size: 2.5rem;
+              flex: 0 1 auto;
+              padding-right: 0.5em;
+              margin-bottom: 0.5em;
+            }
+
+            .contact-image {
+              width: 60px;
+              height: 60px;
+              margin-left: 0;
+              margin-right: 0;
+              margin-top: 0;
+              margin-bottom: calc(0.5em + 2px);
+              order: 2;
+            }
+
+            form {
+              order: 3;
+              flex: 1 1 100%;
+              width: 100%;
+              grid-template-columns: 1fr;
+
+              .form-group {
+                &.checkboxes {
+                  grid-column: 1;
+                  grid-row: auto;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  margin-right: 0;
+                  padding-top: 0;
+                  gap: 0.8em;
+                  margin-top: 0.5em;
+
+                  label {
+                    font-size: 0.9rem;
+                  }
+                }
+
+                input,
+                textarea {
+                  max-width: 100%;
+                  font-size: 0.9rem;
+                }
+
+                button {
+                  width: 100%;
+                  margin-right: 0;
+                  padding: 1em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  footer {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    .footer-columns {
+      flex-direction: column;
+      gap: 1em;
+      text-align: center;
+
+      .footer-column {
+        &.left,
+        &.right {
+          text-align: center;
+        }
+
+        p {
+          font-size: 0.85rem;
+          padding-top: 0.5em;
+        }
+      }
+    }
+  }
+
+  .footer-image {
+    max-width: 80%;
+  }
+}
+
+// Extra small mobile (up to 480px)
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main .Menu section {
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    ul {
+      font-size: 0.85rem;
+    }
+
+    &.News {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .Contact h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
